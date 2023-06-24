@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.position{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.container{
+    width: 100%;
+}
+.container .image{
+    display: flex;
+}
+.container .image .center{
+    width: 25%;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .image .center img{
+    height: 1000px;
+}
+.container .image .box:hover .absolute{
+    opacity: 1;
+    z-index: 1;
+}
